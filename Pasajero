@@ -1,0 +1,17 @@
+import java.util.Date;
+import java.time.LocalDate;
+
+public class Pasajero
+{
+public static void main (String [] args)
+
+
+    Date d = new Date();
+
+        System.out.printf ("Fecha del sistema: %td/%tm/%tY %n",d,d,d);
+
+    LocalDate fechaNacimientoAlejandra = LocalDate.of(2006, 3, 11);
+    Pasajero Alejandra = new Pasajero ("Karolina", fechaNacimientoKarolina);
+}
+
+

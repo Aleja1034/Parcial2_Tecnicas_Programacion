@@ -1,0 +1,36 @@
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.Period;
+import java.util.LinkedList;
+public class Vuelo {
+    private String Nombre;
+    private int NúmeroDePasaporte;
+    private int Edad;
+    private String PreferenciasAlimenticias;
+    private int NúmeroDeVuelo;
+    private String Origen;
+    private String Destino;
+    private LocalDate Fecha;
+    private LocalDateTime HoraDeSalida;
+    private int CapacidadMáximaDePersonas;
+
+    public Vuelo(int NúmeroDeVuelo,String Origen, String Destino, LocalDate Fecha, LocalDateTime HoraDeSalida) {
+
+        this.NúmeroDeVuelo=NúmeroDeVuelo;
+        this.Origen= Origen;
+        this. Destino= Destino;
+        this. Fecha= Fecha;
+        this. HoraDeSalida= HoraDeSalida;
+    }
+
+    public int int getNúmeroDePasaporte(){
+        return NúmeroDePasaporte;
+    }
+    public int getEdad (){
+        LocalDate fechaActual = LocalDate.now();
+        Period periodo = Period.between(fechaNacimiento, fechaActual);
+        return periodo.getYears();
+    }
+
+}
+

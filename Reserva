@@ -1,0 +1,46 @@
+import java.util.LinkedList;
+
+    public class Reserva {
+
+
+
+        LinkedList<FechaDeReserva> FechasDisponibles = new LinkedList<Fecha>();
+
+
+        // Complejidad temporal: 0(1) - operación de tiempo constante.
+
+        public void registrarFecha (Fecha fecha)
+        {
+          FechasDisponibles.add(fecha);
+        }
+        // complejidad temporal: 0(n)
+        public Fecha buscarFecha(String FechasDisponibles)
+        {
+            for (int i = 0; i < FechasDisponibles.size(); i = i + 1)
+            {
+                // se obtiene el libro en la posición i.
+
+                Libro libro1 = librosDisponibles.get(i);
+
+                // se compara el titulo del libro en la posición i.
+                if (fecha.equals(fecha1.getFechaDispomible()))
+                {
+                    // si coincide, devolvemos el libro encontrado
+
+                    return fecha1;
+                }
+            }
+            //si no se encuentra nungún libro con el título buscado, devolvemos null.
+
+            return null;
+
+        }
+        // Complejidad temporal: 0(1) - operaqción de tiempo constante.
+
+        public LinkedList<Fecha> getLibrosDisponibles()
+        {
+            return FechasDisponibles;
+        }
+
+    }
+}
